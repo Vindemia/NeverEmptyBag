@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NeverEmptyBag.FormUnivers">
+    <ContentPage.Content>
+      <StackLayout>
+            <Label Text="Créer un Univers :" FontSize="Large"/>
+            <Editor Text="Nom"/>
+            <Editor Text="Type"/>
+            <Editor Text="Description" />
+            <Editor Text="Jeu"/>
+            <Button Text="Submit"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
