@@ -4,16 +4,36 @@
              xmlns:local="clr-namespace:NeverEmptyBag"
              x:Class="NeverEmptyBag.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-    <StackLayout>
-        <Button x:Name="btn_personnages" Text="Personnages"/>
-        <Button x:Name="btn_univers" Text="Univers"/>
-        <Button x:Name="btn_items" Text="Items"/>
-    </StackLayout>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Label Text="Nerver Empty Bag" Grid.ColumnSpan="4" HorizontalOptions="Center" />
+        <Button x:Name="btn_personnage" Clicked="Btn_personnage_Clicked" Text="Personngae" Grid.Column="0" Grid.Row="1"/>
+        <Button x:Name="btn_univers" Text="Univers" Grid.Column="1" Grid.Row="1"/>
+        <Button x:Name="btn_campagnes" Text="Campagnes" Grid.Column="2" Grid.Row="1"/>
+        <Button x:Name="btn_items" Text="Items" Grid.Column="3" Grid.Row="1"/>
+        <TableView Grid.Row="2" Grid.RowSpan="5" Grid.ColumnSpan="4">
+            <TableRoot>
+                <TableSection Title="Les personnages">
+                    <ViewCell x:Name="perso1" Tapped="perso1_Tapped">
+                        <Label Text="Ton personnage"/>
+                    </ViewCell>
+                    <ViewCell x:Name="perso2" Tapped="perso2_Tapped">
+                        <Label Text="Ton personnage"/>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </Grid>
 
 </ContentPage>
