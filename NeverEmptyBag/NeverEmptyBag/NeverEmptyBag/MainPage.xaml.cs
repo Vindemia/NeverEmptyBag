@@ -29,5 +29,20 @@ namespace NeverEmptyBag
         {
             await Navigation.PushAsync(new FormPersonnage());
         }
+
+        private async void Btn_univers_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void Btn_campagnes_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void Btn_items_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FormItems());
+        }
     }
 }
