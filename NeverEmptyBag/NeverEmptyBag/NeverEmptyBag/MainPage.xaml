@@ -10,5 +10,10 @@
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
     </StackLayout>
+    <StackLayout>
+        <Button x:Name="btn_personnages" Text="Personnages"/>
+        <Button x:Name="btn_univers" Text="Univers"/>
+        <Button x:Name="btn_items" Text="Items"/>
+    </StackLayout>
 
 </ContentPage>
