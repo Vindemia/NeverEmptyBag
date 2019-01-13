@@ -4,9 +4,19 @@
              x:Class="NeverEmptyBag.FormulaireCreation.FormPersonnage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <TableView>
+                <TableRoot>
+                    <TableSection Title="Les personnages">
+                        <EntryCell Label="Nom:" HorizontalTextAlignment="Start"></EntryCell>
+                        <EntryCell Label="Prenom:" HorizontalTextAlignment="Start"></EntryCell>
+                        <ViewCell>
+                            <Picker Title="Univer"></Picker>
+                        </ViewCell>
+                        <EntryCell Label="Race:" HorizontalTextAlignment="Start"></EntryCell>
+                        <EntryCell Label="Classe:" HorizontalTextAlignment="Start"></EntryCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

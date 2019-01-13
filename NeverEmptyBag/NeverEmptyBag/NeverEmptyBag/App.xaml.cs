@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SQLite;
+using System.IO;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace NeverEmptyBag
@@ -13,6 +15,7 @@ namespace NeverEmptyBag
 
             //MainPage = new MainPage();
             MainPage = new NavigationPage(new MainPage());
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal),"database.db3");
         }
 
         protected override void OnStart()

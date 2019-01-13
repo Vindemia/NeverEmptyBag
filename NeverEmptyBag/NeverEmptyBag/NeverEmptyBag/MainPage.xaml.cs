@@ -22,7 +22,7 @@ namespace NeverEmptyBag
         }
         private void perso2_Tapped(object sender, EventArgs e)
         {
-
+            
         }
 
         private async void Btn_personnage_Clicked(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace NeverEmptyBag
 
         private async void Btn_univers_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new FormUnivers());
         }
 
         private async void Btn_campagnes_Clicked(object sender, EventArgs e)

@@ -15,6 +15,7 @@ namespace NeverEmptyBag.FormulaireCreation
 		public FormPersonnage ()
 		{
 			InitializeComponent ();
+
 		}
 	}
 }
