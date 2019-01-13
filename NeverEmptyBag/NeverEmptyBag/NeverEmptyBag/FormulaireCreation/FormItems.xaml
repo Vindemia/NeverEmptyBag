@@ -4,9 +4,11 @@
              x:Class="NeverEmptyBag.FormulaireCreation.FormItems">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+           <Label Text="Ajouter un Item : " FontSize="Large" />
+            <Entry Placeholder="Name" x:Name="item_Name" />
+            <Editor Text="Description" AutoSize="TextChanges" x:Name="item_Description"/>
+            <Entry Placeholder="Nombre de charges" Keyboard="Numeric" x:Name="item_nbCharges" />
+            <Label Text="propriété Magique :" FontSize="Large"/><Switch IsToggled="false" x:Name="item_propMagique"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

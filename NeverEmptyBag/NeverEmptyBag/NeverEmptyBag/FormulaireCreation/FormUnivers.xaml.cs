@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace NeverEmptyBag
+namespace NeverEmptyBag.FormulaireCreation
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class FormUnivers : ContentPage
@@ -15,6 +15,11 @@ namespace NeverEmptyBag
 		public FormUnivers ()
 		{
 			InitializeComponent ();
+		}
+
+		private void Btn_valider_Clicked(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
